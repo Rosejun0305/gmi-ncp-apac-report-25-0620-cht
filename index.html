@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMI Cloud - 亞太地區AI算力與Nvidia雲端夥伴市場動態報告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 180px;
+            height: 60px;
+            background: white;
+            border-radius: 8px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #1e3a8a;
+            font-size: 24px;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px 30px;
+            background-color: #f8fafc;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .country-section {
+            margin-bottom: 40px;
+        }
+        
+        .country-title {
+            background: linear-gradient(90deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .company-item {
+            background: #f8fafc;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .company-header {
+            background: #60a5fa;
+            color: white;
+            padding: 12px 20px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .company-content {
+            padding: 15px 20px;
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        .summary {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        
+        .summary h2 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        
+        .summary ul {
+            list-style: none;
+        }
+        
+        .summary li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .summary li::before {
+            content: "▶";
+            color: #3b82f6;
+            position: absolute;
+            left: 0;
+        }
+        
+        .footer {
+            background: #1e3a8a;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .footer h3 {
+            margin-bottom: 15px;
+        }
+        
+        .source-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        
+        .references {
+            background: #f8fafc;
+            padding: 30px;
+            border-top: 3px solid #3b82f6;
+        }
+        
+        .references h3 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+        
+        .ref-list {
+            font-size: 12px;
+            line-height: 1.4;
+            color: #666;
+        }
+        
+        .ref-item {
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 600px) {
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                padding: 30px 20px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header" style="padding: 0; background: none;">
+            <img src="https://github.com/Rosejun0305/gmi-cloud-edm-NCPreport-20250620_zh/blob/main/ZH.png?raw=true" alt="GMI Cloud 亞太地區AI算力與Nvidia雲端夥伴市場動態報告" style="width: 100%; height: auto; display: block;">
+        </div>
+        
+        <!-- Market Data Section Title -->
+        <div style="background: #f8fafc; padding: 30px; text-align: center;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <span style="font-size: 24px;">📈</span>
+                <span style="font-size: 24px; font-weight: bold; color: #1e3a8a;">市場關鍵數據</span>
+            </div>
+        </div>
+        
+        <!-- Key Statistics -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">重點追蹤國家</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">15</div>
+                <div class="stat-label">核心競爭對手</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$1T</div>
+                <div class="stat-label">最大投資規模<br>SOFTBANK 亞利桑那AI園區</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">18.9</div>
+                <div class="stat-label">EFLOPS 目標算力<br>SAKURA INTERNET 2028</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2000</div>
+                <div class="stat-label">GPU部署數量<br>SAKURA INTERNET H100</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">500MW</div>
+                <div class="stat-label">最大資料中心<br>NAVER CLOUD 摩洛哥</div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Japan Section -->
+            <div class="country-section">
+                <div class="country-title">🇯🇵 日本</div>
+                
+                <div class="company-item">
+                    <div class="company-header">SoftBank Corp.</div>
+                    <div class="company-content">
+                        6月27日，孫正義於股東大會強調軟銀將成為全球AI平台領導者，積極投資AI基礎設施並與Nvidia合作
+                        <a href="https://technews.tw/2025/06/20/softbank-masayoshi-son-issaid-to-propse-1-trillion-usai-hub/" class="source-link">[1]</a>
+                        <a href="https://tw.news.yahoo.com/軟銀拚當超級ai領頭羊-220943920.html" class="source-link">[2]</a>
+                        <a href="https://www.cna.com.tw/news/aopl/202506203002.aspx" class="source-link">[3]</a>
+                        <a href="https://tw.news.yahoo.com/拉攏台積電-只為複製深圳-文看懂軟銀孫正義-水晶地-計畫-042600758.html" class="source-link">[4]</a>
+                        <a href="https://www.sinotrade.com.tw/richclub/news/685ef13a8ff59b56a642ad29" class="source-link">[5]</a>
+                        <a href="https://udn.com/news/story/7240/8821423" class="source-link">[6]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">GMO Internet Group</div>
+                    <div class="company-content">
+                        6月下旬，GMO GPU Cloud宣布H200 GPU雲端服務預約爆滿，並將於近期上線新一批H200雲端服務
+                        <a href="https://internet.gmo/en/news/article/9/" class="source-link">[7]</a>
+                        <a href="https://www.gmo.jp/news/article/9164/" class="source-link">[8]</a>
+                        <a href="https://www.gmo.jp/en/news/article/841/" class="source-link">[9]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">Highreso</div>
+                    <div class="company-content">
+                        6月24日，Highreso公告H200雲端服務降價並擴大供應，主打AI高效能運算
+                        <a href="https://news.taiwannet.com.tw/c8/167815/Highreso-Announces-Discount-Plans-for-NVIDIA-H200-equippedGPUSOROBAN-AI-SPACON-Cloud-and-Begins-Accepting-Reservations-for-NVIDIA-B200.html" class="source-link">[10]</a>
+                        <a href="https://ascii.jp/elem/000/004/268/4268345/" class="source-link">[11]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">KDDI</div>
+                    <div class="company-content">
+                        6月27日，KDDI與HPE共同宣布2026年於大阪堺市啟用新AI資料中心，導入Nvidia GB200 NVL72平台
+                        <a href="https://www.datacenterdynamics.com/en/news/hpe-to-provide-kddis-nvidia-gpu-clusters-for-osaka-data-center/" class="source-link">[12]</a>
+                        <a href="https://tw.nextapple.com/local/20250625/71F98FBD628E7DF05C11FBABE209073C" class="source-link">[13]</a>
+                        <a href="https://blog.moontak.com/id/563286/" class="source-link">[14]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">SAKURA Internet</div>
+                    <div class="company-content">
+                        6月20日，Sakura internet發布2025年度GPU雲平台擴建計畫，目標2028年達到18.9 EFLOPS算力
+                        <a href="https://tw.nextapple.com/finance/20241113/BA6DF83724870DC901B8AC4CBE20D255" class="source-link">[15]</a>
+                        <a href="https://www.moomoo.com/hant/news/post/40027528/sakura-internet-has-started-providing-the-secondversion-of-their" class="source-link">[16]</a>
+                        <a href="https://technews.tw/2024/10/29/sakura-internet-purchases-approximately-1100-nvidia-gpus/" class="source-link">[17]</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- South Korea Section -->
+            <div class="country-section">
+                <div class="country-title">🇰🇷 韓國</div>
+                
+                <div class="company-item">
+                    <div class="company-header">KT (Korea Telecom)</div>
+                    <div class="company-content">
+                        7月3日，KT發表AI語義通訊技術，推動6G網路AI應用，並強調與三星電子的AI無線網路合作
+                        <a href="https://www.mk.co.kr/cn/business/11359035" class="source-link">[18]</a>
+                        <a href="https://www.technice.com.tw/techmanage/telecom/130614/" class="source-link">[19]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">LG CNS</div>
+                    <div class="company-content">
+                        6月23日，LG CNS宣布成立Future Robotics Lab，專注Physical AI與產業AI機器人服務
+                        <a href="https://news.nate.com/view/20250623n11851" class="source-link">[20]</a>
+                        <a href="https://v.daum.net/v/20250624163708865?f=p" class="source-link">[21]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">Naver Cloud</div>
+                    <div class="company-content">
+                        6月25日，Naver Cloud與Nvidia深化主權AI合作，並於摩洛哥建設500MW AI資料中心，採用Nvidia Blackwell GB200 GPU
+                        <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000724745_BJC8V7EG3OHIBT693BV69" class="source-link">[22]</a>
+                        <a href="https://www.moomoo.com/hans/news/post/54259707/naver-nvidia-establish-consortium-to-build-ai-datacenter-in" class="source-link">[23]</a>
+                        <a href="https://www.fclnews.com/119137/" class="source-link">[24]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">SK Telecom</div>
+                    <div class="company-content">
+                        6月28日，SK Telecom公布AI資料中心業務擴展，AIDC營收年增11.1%，AIX業務年增27.2%。同時與AWS合作，推動韓國最大AI資料中心建設
+                        <a href="https://tw.stock.yahoo.com/news/sk電訊攜手亞馬遜aws-打造韓國最大ai數據中心-總投資7兆韓元001742109.html" class="source-link">[25]</a>
+                        <a href="https://www.forecastock.tw/article/cmoneyairesearcher-5b7cd52e-502a-11f0-98c8-6a34bfbe518b" class="source-link">[26]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">Samsung SDS</div>
+                    <div class="company-content">
+                        6月30日，Samsung SDS宣布強化AI雲平台與企業AI解決方案，聚焦智慧製造、金融、醫療等產業
+                        <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000725935_OBBL319N2QCUL56SWNJ67" class="source-link">[27]</a>
+                        <a href="https://hhh.com.tw/HHH_NEW/columns_detail/8352.php" class="source-link">[28]</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Thailand Section -->
+            <div class="country-section">
+                <div class="country-title">🇹🇭 泰國</div>
+                
+                <div class="company-item">
+                    <div class="company-header">Siam AI / Siam.AI Cloud</div>
+                    <div class="company-content">
+                        6月21日，Siam AI與Nvidia簽署合作協議，推動泰國主權雲與AI生態系，並與40所大學、50家新創合作
+                        <a href="https://www.threads.com/@nikkeiasia/post/DGXgcI6IqdJ/siam-ai-the-first-nvidia-cloud-partner-in-thailand-isaiming-to-build-this-year" class="source-link">[29]</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Singapore Section -->
+            <div class="country-section">
+                <div class="country-title">🇸🇬 新加坡</div>
+                
+                <div class="company-item">
+                    <div class="company-header">Singtel Nxera</div>
+                    <div class="company-content">
+                        6月26日，Singtel Nxera宣布與馬來西亞電信合資，在柔佛州打造AI-ready綠色資料中心園區，預計2026年啟用，採用Nvidia GPU與液冷技術
+                        <a href="https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?id=0000698376_0U84QWFR6IQI1A7TF5QL4" class="source-link">[30]</a>
+                        <a href="https://www.moomoo.com/hans/community/feed/singtel-s-nxera-and-malaysia-s-tm-form-joint-venture112637282680837" class="source-link">[31]</a>
+                        <a href="https://www.reccessary.com/zh-tw/news/Singtel-green-loan-develop-AI-data-centre" class="source-link">[32]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">Bitdeer Technologies Group</div>
+                    <div class="company-content">
+                        6月29日，Bitdeer宣布擴充Nvidia DGX SuperPOD，主打生成式AI與大型語言模型雲端服務
+                        <a href="https://www.bitdeer.com/zhtw/announcement/bitdeer-official-launch-of-nvidia-superpod-dgx-h100-system" class="source-link">[33]</a>
+                        <a href="https://m.cnyes.com/news/id/5375939?exp=a" class="source-link">[34]</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Malaysia Section -->
+            <div class="country-section">
+                <div class="country-title">🇲🇾 馬來西亞</div>
+                
+                <div class="company-item">
+                    <div class="company-header">YTL Power / YTL Cloud</div>
+                    <div class="company-content">
+                        6月25日，YTL Power確認馬來西亞首台Nvidia GB200超級電腦將於2025年第三季上線，部署於柔佛州綠能資料中心
+                        <a href="https://www.moomoo.com/hans/news/post/35365966/ytl-power-to-deploy-nvidia-s-latest-blackwell-superchip" class="source-link">[35]</a>
+                        <a href="https://www.digitalnewsasia.com/business/ytl-develop-one-worlds-most-advanced-supercomputers-powerednvidia" class="source-link">[36]</a>
+                    </div>
+                </div>
+                
+                <div class="company-item">
+                    <div class="company-header">SNS Network</div>
+                    <div class="company-content">
+                        6月22日，SNS Network推出AI Factory，提供GPU即服務（GPUaaS），採用Nvidia Hopper GPU
+                        <a href="https://theedgemalaysia.com/node/753235" class="source-link">[37]</a>
+                        <a href="https://www.moomoo.com/hans/community/feed/sns-network-technology-berhad-financial-report-1st-quarterended-april-114753493270534" class="source-link">[38]</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Market Summary -->
+            <div class="summary">
+                <h2>亞太算力市場總結</h2>
+                <ul>
+                    <li>日本持續加碼AI基礎設施，NCP夥伴積極擴建H200/GB200等新一代GPU雲平台，並推動生成式AI與產業應用。</li>
+                    <li>韓國聚焦主權AI、6G與AI語義通訊，NCP與Nvidia合作推動本地與國際AI資料中心建設，並加速AI機器人與產業AI落地。</li>
+                    <li>新加坡、馬來西亞跨國合資打造AI-ready綠色資料中心，採用Nvidia最新GPU與液冷技術，強化區域AI運算樞紐地位。</li>
+                    <li>泰國Siam AI攜手Nvidia推動主權雲與本地語言模型，積極建設百兆瓦級AI資料中心。</li>
+                    <li>整體趨勢：亞太NCP與Nvidia深度合作，主權AI、液冷高密度資料中心、GPU即服務（GPUaaS）、跨國合作與人才培育成為產業升級關鍵。各國正加速AI基礎設施建設，推動數位經濟與產業轉型。</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 20px;">
+                <span style="font-size: 24px;">💪</span>
+                <span style="font-size: 20px; font-weight: bold;">知己知彼，百戰百勝</span>
+            </div>
+            <p style="margin-bottom: 15px;">GMI Cloud 深度洞察亞太AI雲端市場動態，掌握競爭對手每一個戰略佈局</p>
+
+            
+            <div style="background: #2d3748; padding: 20px; border-radius: 8px; margin-top: 20px;">
+                <div style="margin-bottom: 15px;">
+                    <span style="color: #a0aec0;">© 2025 GMI Cloud</span>
+                    <span style="color: #718096;">APAC</span>
+                    <span style="color: #a0aec0;">Team | 本報告僅供內部戰略分析使用</span>
+                </div>
+                <div style="color: #a0aec0; margin-bottom: 10px;">
+                    如需更詳細市場分析，請聯繫：rose.c@gmicloud.ai
+                </div>
+                <div style="color: #a0aec0; font-size: 14px;">
+                    資料來源：亞太地區官方發布、財經媒體、技術論壇 | 報告時間：2025/6/20-7/4
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
